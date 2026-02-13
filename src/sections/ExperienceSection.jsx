@@ -63,7 +63,7 @@ const ExperienceSection = () => {
         </div>
         <div className="mt-32 relative ">
             <div className="relative z-50 xl:space-y-32 space-y-10">
-                {expCards.map((card, index)=>(
+                {expCards.map((card)=>(
                     <div key={card.title} className='exp-card-wrapper'>
                             <div className="xl:w-2/6 ">
                             <GlowCard card={card}>
@@ -88,7 +88,7 @@ const ExperienceSection = () => {
                                         <p className='my-5 text-white-50'>
                                             📆{card.date}
                                         </p>
-                                        <p className='text-[#839cb5] italic'>
+                                        <p className='text-blue-50 italic'>
                                             Responsibilties
                                             </p>
                                             <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
